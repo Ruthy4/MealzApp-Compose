@@ -11,7 +11,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
-class MealsCategoryViewModel(private val repository: MealsRepository = MealsRepository()) : ViewModel() {
+class MealsCategoryViewModel(private val repository: MealsRepository = MealsRepository.getInstance()) : ViewModel() {
 
     init {
 
